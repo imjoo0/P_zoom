@@ -1,0 +1,11 @@
+/*
+NODEMON
+서버를 내리고 올리지 않아도 소스를 변경할 때 바로 감지해서 자동으로 서버를 재시작 해주는 TOOL
+npm install nodemon --save-dev
+npm run dev
+*/
+
+{
+  "ignore": ["src/public/*"],
+  "exec": "babel-node src/server.js"
+}

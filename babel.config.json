@@ -1,0 +1,4 @@
+// babel : js 컴파일러 
+{
+  "presets": ["@babel/preset-env"]
+}
