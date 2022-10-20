@@ -9,3 +9,4 @@ npm run dev
   "ignore": ["src/public/*"],
   "exec": "babel-node src/server.js"
 }
+
