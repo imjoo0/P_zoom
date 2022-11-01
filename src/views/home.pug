@@ -1,3 +1,5 @@
+//- home.pug
+
 doctype html
 html(lang="en")
     head
@@ -5,9 +7,18 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Noom
-        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
-    body
+        //- 덜 못생기게 만들어주는 요소
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css") 
+    body 
         header
-            h1 P-zoom
+            h1 Noom
         main
-        scrip (src="public/js/app.js") 
+            // 닉네임 설정
+            form#nick
+                input(type="text",placeholder="choose a nickname",required)
+                button Save  
+            ul
+            form#message
+                input(type="text",placeholder="write a msg",required)
+                button Send
+        script(src="/public/js/app.js")
